@@ -173,14 +173,12 @@ int desplazarArray (int *array, int cantidad, int derecha, int izquierda, int or
                 array[b] = array[b-1];
                 array[b-1]= auxiliar;
             }
-
-
             if(array[a] < 0 || array[b] > 4)
             {
                 flag = 0;
             }
         }
-    }
+}
 
 int convertirNumeroEnteros(char *str)
 {
