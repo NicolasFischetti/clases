@@ -190,7 +190,7 @@ void mostrarPromedio(char arrayApellido [][20], int notaUno[], int notaDos[], fl
      }
 }
 
-int ordenarArray(int* array, int* tam, int* orden)
+int ordenarArray(int* array, int* tam, int* orden) // este para hacer un for con cada uno promedio, apellido
 {
     int i;
     int auxiliar;

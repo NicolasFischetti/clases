@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #define TAM 5
+#define CANT 5
+#include "estrcutraempleado.h"
 
 int main()
 {
@@ -13,14 +15,46 @@ int main()
     // hacer un for hasta 5
     //
 
-    char arrayApellido [TAM][20] = {"Lopez", "Alvarez", "Zapata", "Perez", "Albornos"};
+   /* char arrayApellido [TAM][20] = {"Lopez", "Alvarez", "Zapata", "Perez", "Albornos"};
     int notaUno[TAM] = {10, 4 , 2, 9, 8};
     int notaDos[TAM] = {1 , 8 , 2, 8, 10};
     float promedio[TAM];
     int i;
 
-   mostrarPromedio(arrayApellido[20],notaUno,notaDos, promedio, TAM);
+   mostrarPromedio(arrayApellido[20],notaUno,notaDos, promedio, TAM);*/
 
+   int proximoId= 0;
+   int seguir= 's';
+   int continuar;
+   Empleado arrayEmpleado[CANT];
+   do
+   {
+       printf("1-Mostrar lista\n");
+       printf("2- Mostrar alta\n");
+       printf("3- Mostrar baja\n");
+       printf("4- Salir \n");
+        getInt("Ingrese una opcion", "Error", 2, 1, 3,*continuar)
+
+       scanf("%d", continuar);
+
+        switch(continuar)
+        {
+
+            case 1:
+            emp_mostrar(arrayEmpleado,CANT);
+            break;
+            case 2:
+            emp_alta(arrayEmpleados,CANT);
+            proximoId++;
+            break;
+            case 3:
+            emp_baja(arrayEmpleados,CANT);
+            proximoId--;
+            break;
+
+        }
+
+   }while (seguir!= 'n')
 
 
 }
