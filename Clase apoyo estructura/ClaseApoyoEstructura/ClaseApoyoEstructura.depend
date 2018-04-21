@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1524313518 source:d:\clase apoyo estructura\claseapoyoestructura\empleado.c
+	<stdio.h>
+	"empleado.h"
+	<string.h>
+
+1524313489 d:\clase apoyo estructura\claseapoyoestructura\empleado.h
+
