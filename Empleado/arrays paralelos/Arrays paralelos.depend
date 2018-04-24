@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1524004125 source:d:\clases-master\arrays paralelos\arrays paralelos.c
+
+1524008363 source:d:\clases-master\arrays paralelos\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1524008506 source:d:\clases-master\arrays paralelos\nuevabiblioteca.c
+
