@@ -1,0 +1,62 @@
+# depslib dependency file v1.0
+1524789735 source:d:\template\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"abonados.h"
+	"utn.h"
+
+1524691840 source:d:\template\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1524691840 d:\template\utn.h
+
+1524789305 source:d:\template\fantasma.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fantasma.h"
+	"utn.h"
+
+1524789403 d:\template\fantasma.h
+
+1524787808 source:d:\template primer parcial\fantasma.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fantasma.h"
+	"utn.h"
+
+1524787808 d:\template primer parcial\fantasma.h
+
+1524691840 d:\template primer parcial\utn.h
+
+1524782610 source:d:\template primer parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"fantasma.h"
+	"utn.h"
+
+1524691840 source:d:\template primer parcial\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1524791221 source:d:\template\abonados.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+	"abonados.h"
+
+1524791252 d:\template\abonados.h
+

@@ -1,0 +1,102 @@
+# depslib dependency file v1.0
+1524699666 source:d:\template\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"fantasma.h"
+	"utn.h"
+
+1524691839 source:d:\template\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1524691839 d:\template\utn.h
+
+1524700062 source:d:\template\fantasma.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"fantasma.h"
+	"utn.h"
+
+1524700062 d:\template\fantasma.h
+
+1524782885 source:d:\template primer parcial\fantasma.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"fantasma.h"
+	"utn.h"
+
+1524782509 d:\template primer parcial\fantasma.h
+
+1524691840 d:\template primer parcial\utn.h
+
+1524782610 source:d:\template primer parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"fantasma.h"
+	"utn.h"
+
+1524691840 source:d:\template primer parcial\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1524785646 source:d:\examen\abonado.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"abonado.h"
+	"utn.h"
+
+1524784900 d:\examen\abonado.h
+
+1524691840 d:\examen\utn.h
+
+1524789707 source:d:\examen\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"abonado.h"
+	"llamada.h"
+	"informes.h"
+	"utn.h"
+
+1524691840 source:d:\examen\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1524786503 source:d:\examen\llamada.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"llamada.h"
+	"utn.h"
+
+1524785272 d:\examen\llamada.h
+
+1524786953 d:\examen\informes.h
+
+1524789736 source:d:\examen\informes.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"abonado.h"
+	"llamada.h"
+	"informes.h"
+
