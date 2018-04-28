@@ -5,11 +5,17 @@
 #define QTY 10
 #define OCUPADO 0
 #define LIBRE 1
+
+#define EN_CURSO 0
+#define SOLUCIONADO 1
+#define NO_SOLUCIONADO 2
+#include "llamadas.h"
 #include "abonados.h"
-static int buscarLugarLibre(Abonados* array,int limite);
+
+static int buscarLugarLibre(Llamadas* array,int limite);
 static int proximoId();
 
-int abonados_init(Abonados* array,int limite)
+int llamadas_init(Llamadas* array,int limite)
 {
     int retorno = -1;
     int i;
@@ -24,7 +30,7 @@ int abonados_init(Abonados* array,int limite)
     return retorno;
 }
 
-int abonados_buscarPorId(Abonados* array,int limite, int id)
+int llamadas_buscarPorId(Llamadas* array,int limite, int id)
 {
     int retorno = -1;
     int i;
@@ -33,7 +39,7 @@ int abonados_buscarPorId(Abonados* array,int limite, int id)
         retorno = -2;
         for(i=0;i<limite;i++)
         {
-            if(array[i].isEmpty == OCUPADO && array[i].idAbonados == id)
+            if(array[i].isEmpty == OCUPADO && array[i].idLlamadas == id)
             {
                 retorno = i;
                 break;
@@ -43,12 +49,12 @@ int abonados_buscarPorId(Abonados* array,int limite, int id)
     return retorno;
 }
 
-int abonados_baja(Abonados* array,int limite, int id)
+int llamadas_baja(Llamadas* array,int limite, int id)
 {
 
     int retorno = -1;
     int indice;
-    indice = abonados_buscarPorId(array,limite,id);
+    indice = llamadas_buscarPorId(array,limite,id);
     if(indice >= 0)
     {
         retorno = 0;
@@ -58,7 +64,7 @@ int abonados_baja(Abonados* array,int limite, int id)
 }
 
 
-int abonados_mostrar(Abonados* array,int limite)
+int llamadas_mostrar(Llamadas* array,int limite)
 {
     int retorno = -1;
     int i;
@@ -69,14 +75,14 @@ int abonados_mostrar(Abonados* array,int limite)
         {
             if(!array[i].isEmpty)
             {
-               printf("\n[RELEASE] %s - %d - %d",array[i].nombre,array[i].idAbonados,array[i].isEmpty);
+               printf("\n[RELEASE] %d - %s - %d - %d - %d - %d",array[i].idAbonado,array[i].motivo,array[i].idEstado, array[i].tiempo, array[i].idLlamada, array[i].isEmpty);
             }
         }
     }
     return retorno;
 }
 
-int abonados_mostrarDebug(Abonados* array,int limite)
+int llamadas_mostrarDebug(Llamadas* array,int limite)
 {
     int retorno = -1;
     int i;
@@ -85,19 +91,20 @@ int abonados_mostrarDebug(Abonados* array,int limite)
         retorno = 0;
         for(i=0;i<limite;i++)
         {
-            printf("\n[DEBUG] %s - %d - %d",array[i].nombre,array[i].idAbonados,array[i].isEmpty);
+            printf("\n[DEBUG] %d - %s - %d - %d - %d - %d",array[i].idAbonado,array[i].motivo,array[i].idEstado, array[i].tiempo, array[i].idLlamada, array[i].isEmpty);
         }
     }
     return retorno;
 }
 
 
-int abonados_alta(Abonados* array,int limite)
+int llamadas_alta(Llamadas* array,int limite)
 {
-    int retorno = -1;
-    char nombre[50];
-    int id;
+     int idAbonado;
+    char	motivo[50];
+    int isEmpty;
     int indice;
+	int id;
 
     if(limite > 0 && array != NULL)
     {
@@ -107,13 +114,21 @@ int abonados_alta(Abonados* array,int limite)
         {
             retorno = -3;
             id = proximoId();
-            if(!getValidString("Nombre?","Error","Overflow", nombre,50,2))
+            if(!getValidInt("Id del abonado?","Error", &idAbonado,50,2))
+			{	
+				if(!getValidString("Motivo?","Error","Overflow", motivo,50,2))
             {
                 retorno = 0;
-                strcpy(array[indice].nombre,nombre);
-                array[indice].idAbonados = id;
-                array[indice].isEmpty = OCUPADO;
+                array[indice].idAbonado = idAbonado;
+                array[indice].motivo = motivo;
+				array[indice].isEstado= EN_CURSO;
+				array[indice].tiempo = -1;
+
+				array[indice].idLlamada = id;
+				array[indice].isEmpty= OCUPADO;
+
             }
+	      }			
         }
     }
     return retorno;
@@ -121,20 +136,35 @@ int abonados_alta(Abonados* array,int limite)
 
 
 
-int abonados_modificacion(Abonados* array,int limite, int id)
+int llamadas_modificacion(Llamadas* array,int limite, int id)
 {
     int retorno = -1;
     int indice;
-    char nombre[50];
-    indice = abonados_buscarPorId(array,limite,id);
+    int idAbonado;
+	int rtaEstado;
+ 
+    
+    int tiempo;
+    int idLlamada;
+    int isEmpty;
+    indice = llamadas_buscarPorId(array,limite,id);
     if(indice >= 0)
     {
         retorno = -2;
-        if(!getValidString("Nombre?","Error","Overflow", nombre,50,2))
+        if(!getValiInt("Ingrese 1 [SOLUCIONADO] / 2 [NO SOLUCIONADO]","error", &rtaEstado,0,2,2))
         {
+			if(!getValiInt("Ingrese el tiempo","error", &tiempo,0,1000,2))
+			{
             retorno = 0;
-            strcpy(array[indice].nombre,nombre);
-        }
+			if(rtaEstado==0)
+			array[indice].idEstado= SOLUCIONADO;
+			else
+			array[indice].idEstado= NO_SOLUCIONADO;
+            
+			}
+		
+		}
+			
 
 
     }
@@ -142,7 +172,7 @@ int abonados_modificacion(Abonados* array,int limite, int id)
 }
 
 
-static int buscarLugarLibre(Abonados* array,int limite)
+static int buscarLugarLibre(Llamadas* array,int limite)
 {
     int retorno = -1;
     int i;
@@ -171,12 +201,12 @@ static int proximoId()
 
 
 
-int abonados_ordenar(Abonados* array,int limite, int orden)
+/*int llamadas_ordenar(Llamadas* array,int limite, int orden)
 {
     int retorno = -1;
     int flagSwap;
     int i;
-    Abonados auxiliar;
+    Llamadas auxiliar;
 
     if(limite > 0 && array != NULL)
     {
@@ -201,7 +231,7 @@ int abonados_ordenar(Abonados* array,int limite, int orden)
     }
 
     return retorno;
-}
+}*/
 
 
 

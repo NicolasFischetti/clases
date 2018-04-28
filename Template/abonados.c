@@ -6,6 +6,7 @@
 #define OCUPADO 0
 #define LIBRE 1
 #include "abonados.h"
+
 static int buscarLugarLibre(Abonados* array,int limite);
 static int proximoId();
 
@@ -218,7 +219,7 @@ int abonados_ordenar(Abonados* array,int limite, int orden)
     }
 
     return retorno;
-}
+}*/
 
 
 

@@ -20,7 +20,7 @@ int main()
     llamada_init(arrayLlamadas,QTY_LLAMADAS);
     do
     {
-        getValidInt("\n1.Alta Abonado\n2.Baja Abonado\n3.Modificar Abonado\n4.Mostrar Abonado\n5.Ordenar\n6.Mostrar Llamada\n7.Nueva Llamada\n7.Fin Llamada\n9.Salir\n","\nNo valida\n",&menu,1,9,1);
+        getValidInt("\n1.Alta Abonado\n2.Baja Abonado\n3.Modificar Abonado\n4.Mostrar Abonado\n5.Ordenar\n6.Mostrar Llamada\n7.Nueva Llamada\n8.Fin Llamada\n9.Salir\n","\nNo valida\n",&menu,1,9,1);
         switch(menu)
         {
             case 1:
