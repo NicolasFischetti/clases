@@ -1,0 +1,19 @@
+Crea un directorio nuevo, ábrelo y ejecuta
+git init
+para crear un nuevo repositorio de git.
+
+Crea una copia local del repositorio ejecutando
+git clone /path/to/repository
+
+Puedes registrar cambios (añadirlos al Index) usando
+git add <filename>
+git add .
+Este es el primer paso en el flujo de trabajo básico. Para hacer commit a estos cambios usa
+git commit -m "Commit message"
+
+Tus cambios están ahora en el HEAD de tu copia local. Para enviar estos cambios a tu repositorio remoto ejecuta 
+git push origin master
+
+Para actualizar tu repositorio local al commit más nuevo, ejecuta 
+git pull
+en tu directorio de trabajo para bajar y fusionar los cambios remotos.
