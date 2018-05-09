@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1525533061 source:d:\ejercicioparcial (incompleto)\eusuario.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"eusuario.h"
+	"utn.h"
+
+1525533376 d:\ejercicioparcial (incompleto)\eusuario.h
+
+1525523672 d:\ejercicioparcial (incompleto)\utn.h
+
+1525533362 source:d:\ejercicioparcial (incompleto)\main.c
+	<stdio.h>
+	<stdlib.h>
+	"string.h"
+	"utn.h"
+	"eusuario.h"
+	"publicacion.h"
+
+1525533326 d:\ejercicioparcial (incompleto)\publicacion.h
+
+1525523654 source:d:\ejercicioparcial (incompleto)\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1525533317 source:d:\ejercicioparcial (incompleto)\publicacion.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"eusuario.h"
+	"publicacion.h"
+	"utn.h"
+
