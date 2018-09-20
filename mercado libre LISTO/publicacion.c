@@ -155,7 +155,6 @@ int producto_buscarPorId(ePublicacion* productos,int tam, int id)
     int i;
     if(productos > 0 && productos != NULL)
     {
-        retorno = -2;
         for(i=0;i<tam;i++)
         {
             if(productos[i].isEmpty == 1 && productos[i].idProducto == id)
