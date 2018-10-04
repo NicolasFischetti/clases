@@ -1,0 +1,327 @@
+# depslib dependency file v1.0
+1524699666 source:d:\template\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"fantasma.h"
+	"utn.h"
+
+1524691839 source:d:\template\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1524691839 d:\template\utn.h
+
+1524700062 source:d:\template\fantasma.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"fantasma.h"
+	"utn.h"
+
+1524700062 d:\template\fantasma.h
+
+1524705693 source:d:\template_2\pantalla.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"pantalla.h"
+	"utn.h"
+
+1524700062 d:\template_2\fantasma.h
+
+1524691839 d:\template_2\utn.h
+
+1524691839 source:d:\template_2\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1524704878 source:d:\template_2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"pantalla.h"
+	"utn.h"
+
+1524705120 d:\template_2\pantalla.h
+
+1524791004 source:d:\labo1\clase11\contratacion.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"Contratacion.h"
+	"utn.h"
+	"Pantalla.h"
+
+1524791015 d:\labo1\clase11\contratacion.h
+	"pantalla.h"
+
+1524791070 d:\labo1\clase11\pantalla.h
+
+1524691840 d:\labo1\clase11\utn.h
+
+1524791042 source:d:\labo1\clase11\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"pantalla.h"
+	"utn.h"
+	"Contratacion.h"
+
+1524791107 source:d:\labo1\clase11\pantalla.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"pantalla.h"
+	"utn.h"
+
+1524691840 source:d:\labo1\clase11\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1525304688 source:d:\clase12\contratacion.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"Contratacion.h"
+	"utn.h"
+	"Pantalla.h"
+
+1525304647 d:\clase12\contratacion.h
+	"pantalla.h"
+
+1525298482 d:\clase12\pantalla.h
+
+1524691840 d:\clase12\utn.h
+
+1524691840 source:d:\clase12\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1525306311 source:d:\clase12\informar.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"Contratacion.h"
+	"utn.h"
+	"Pantalla.h"
+
+1525305115 source:d:\clase12\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"pantalla.h"
+	"utn.h"
+	"Contratacion.h"
+	"informar.h"
+
+1525298482 source:d:\clase12\pantalla.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"pantalla.h"
+	"utn.h"
+
+1525305074 d:\clase12\informar.h
+
+1525304690 source:e:\clase12_2\contratacion.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"Contratacion.h"
+	"utn.h"
+	"Pantalla.h"
+
+1525304648 e:\clase12_2\contratacion.h
+	"pantalla.h"
+
+1525298484 e:\clase12_2\pantalla.h
+
+1524691840 e:\clase12_2\utn.h
+
+1525821432 source:e:\clase12_2\informar.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"Contratacion.h"
+	"utn.h"
+	"Pantalla.h"
+
+1525821548 source:e:\clase12_2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"pantalla.h"
+	"utn.h"
+	"Contratacion.h"
+	"informar.h"
+
+1525821712 e:\clase12_2\informar.h
+
+1525298484 source:e:\clase12_2\pantalla.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"pantalla.h"
+	"utn.h"
+
+1524691840 source:e:\clase12_2\utn.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"utn.h"
+
+1525983568 source:f:\programacion-laboratorio\modelos parcial\parcial 1 1er cuatrimestre\biblioteca.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"biblioteca.h"
+
+1525920238 f:\programacion-laboratorio\modelos parcial\parcial 1 1er cuatrimestre\biblioteca.h
+
+1525980838 source:f:\programacion-laboratorio\modelos parcial\parcial 1 1er cuatrimestre\contratacion.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"contratacion.h"
+	"biblioteca.h"
+	"pantalla.h"
+
+1525981686 f:\programacion-laboratorio\modelos parcial\parcial 1 1er cuatrimestre\contratacion.h
+	"pantalla.h"
+
+1525980364 f:\programacion-laboratorio\modelos parcial\parcial 1 1er cuatrimestre\pantalla.h
+
+1525980292 source:f:\programacion-laboratorio\modelos parcial\parcial 1 1er cuatrimestre\informar.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"contratacion.h"
+	"biblioteca.h"
+	"pantalla.h"
+
+1525981136 source:f:\programacion-laboratorio\modelos parcial\parcial 1 1er cuatrimestre\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"pantalla.h"
+	"biblioteca.h"
+	"contratacion.h"
+	"informar.h"
+
+1525821712 f:\programacion-laboratorio\modelos parcial\parcial 1 1er cuatrimestre\informar.h
+
+1525983442 source:f:\programacion-laboratorio\modelos parcial\parcial 1 1er cuatrimestre\pantalla.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"pantalla.h"
+	"biblioteca.h"
+
+1525983598 source:d:\parcial hoyos.ezequiel\biblioteca.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"biblioteca.h"
+
+1525920238 d:\parcial hoyos.ezequiel\biblioteca.h
+
+1525980838 source:d:\parcial hoyos.ezequiel\contratacion.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"contratacion.h"
+	"biblioteca.h"
+	"pantalla.h"
+
+1525981686 d:\parcial hoyos.ezequiel\contratacion.h
+	"pantalla.h"
+
+1525980364 d:\parcial hoyos.ezequiel\pantalla.h
+
+1525996937 source:d:\parcial hoyos.ezequiel\informar.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"cliente.h"
+	"biblioteca.h"
+	"publicacion.h"
+
+1525983442 source:d:\parcial hoyos.ezequiel\pantalla.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"pantalla.h"
+	"biblioteca.h"
+
+1525993523 source:d:\parcial hoyos.ezequiel\cliente.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"cliente.h"
+	"biblioteca.h"
+
+1525989878 d:\parcial hoyos.ezequiel\cliente.h
+
+1525996767 d:\parcial hoyos.ezequiel\publicacion.h
+	"cliente.h"
+
+1525996214 source:d:\parcial hoyos.ezequiel\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"cliente.h"
+	"biblioteca.h"
+	"publicacion.h"
+	"informar.h"
+
+1525996820 d:\parcial hoyos.ezequiel\informar.h
+
+1525996767 source:d:\parcial hoyos.ezequiel\publicacion.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"publicacion.h"
+	"biblioteca.h"
+	"cliente.h"
+
